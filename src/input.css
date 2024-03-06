@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header {
+    height: 5vh;
+}
+
+main {
+    height: 95vh;
+    display: flex;
+    justify-content: space-between;
+}

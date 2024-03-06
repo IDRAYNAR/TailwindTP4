@@ -5,66 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d1033388a4.js" crossorigin="anonymous"></script>
-    <link href="/dist/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-    tailwind.config = {
-      theme: {
-    extend: {
-      colors: {
-        'ltGray': '#F7F7F7',
-        'ltBlue': '#D9EAFD',
-        'ltYellow': '#FFF089',
-        'White': '#FFFFFF',
-        'Black': '#141414',
-        'ltOrange': '#FFA500',
-        'ltDark': '#293548',
-        'Midnight': '#1E293B',
-        'DarkModeText': '#94A3B8',
-        'ltBlueDark': '#0E1A2B',
-        'ltYellowDark': '#B3A800',
-        'ltOrangeDark': '#CC6600',
-      },
-      fontFamily: {
-        'Montserrat': ['Montserrat', 'sans-serif'],
-      },
-      fontSize: {
-        '2xs': '.5rem',
-        's': '.75rem',
-        'm': '.875rem',
-        'l': '1rem',
-        'xl': '1.25rem',
-        '2xl': '1.5rem',
-        '3xl': '2rem',
-      },
-      spacing: {
-        '1/2': '50%',
-        '1/3': '33.333333%',
-        '2/3': '66.666667%',
-        '1/4': '25%',
-        '2/4': '50%',
-        '3/4': '75%',
-      },
-      screens: {
-        'xs': '375px',
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-      },
-      'rounded': {
-        'xs': '0.125rem',
-        'sm': '0.25rem',
-        'md': '0.375rem',
-        'lg': '0.5rem',
-        'xl': '0.75rem',
-        '2xl': '1rem',
-        'full': '9999px',
-      }
-    },
-  },
-    }
-  </script>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./input.css">
 </head>
 
 <body class="bg-ltGray font-Montserrat">
@@ -75,8 +17,10 @@
                 <div class="flex gap-3">
                     <a href="#About" class="bg-white px-4 py-2 rounded-full dark:bg-ltDark">About</a>
                     <a href="#SendGift" class="bg-white px-4 py-2 rounded-full dark:bg-ltDark">Send e-gift</a>
-                    <button class="bg-ltGray text-white px-4 py-2 rounded-full hidden dark:block" onclick="document.body.classList.toggle('dark')">🌞</button>
-                    <button class="bg-ltDark text-white px-4 py-2 rounded-full block dark:hidden" onclick="document.body.classList.toggle('dark')">🌛</button>
+                    <button class="bg-ltGray text-white px-4 py-2 rounded-full hidden dark:block"
+                        onclick="document.body.classList.toggle('dark')">🌞</button>
+                    <button class="bg-ltDark text-white px-4 py-2 rounded-full block dark:hidden"
+                        onclick="document.body.classList.toggle('dark')">🌛</button>
                 </div>
             </div>
             <div class="bg-white px-3 py-2 rounded-full dark:bg-ltDark">
@@ -111,62 +55,65 @@
     </header>
     <main class="p-5 flex flex-col gap-5 dark:bg-Midnight dark:text-DarkModeText">
         <section>
-            <div class="flex justify-between pt-6">
-                <div class="flex flex-col text-7xl">
-                    <div class="flex items-center gap-2">
-                        <p>Simplify your</p>
-                        <div class="w-14 h-14 rotate-45">
-                            <svg viewBox="0 0 35.4113 67.2004" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                style="width: 100%; height: 100%;">
-                                <rect x="0.255737" y="0.52829" width="35.4113" height="67.2004" rx="17.7057"
-                                    fill="#D9EAFD" />
-                            </svg>
+            <section>
+                <div class="flex justify-between pt-6">
+                    <div class="flex flex-col text-7xl">
+                        <div class="flex items-center gap-2">
+                            <p>Simplify your</p>
+                            <div class="w-14 h-14 rotate-45">
+                                <svg viewBox="0 0 35.4113 67.2004" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 100%; height: 100%;">
+                                    <rect x="0.255737" y="0.52829" width="35.4113" height="67.2004" rx="17.7057"
+                                        fill="#D9EAFD" />
+                                </svg>
+                            </div>
+                            <p>health</p>
                         </div>
-                        <p>health</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <p>and</p>
-                        <div class="w-14 h-14">
-                            <svg viewBox="0 0 70.7011 70.7011" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                style="width: 100%; height: 100%;">
-                                <rect x="0.61084" y="30.7361" width="70.7011" height="9.79788" rx="4.89894"
-                                    fill="#FEF189" />
-                                <rect x="40.8604" y="0.533691" width="70.7011" height="9.79788" rx="4.89894"
-                                    transform="rotate(90 40.8604 0.533691)" fill="#FEF189" />
-                                <rect x="15.977" y="15.8999" width="39.9687" height="39.9687" rx="19.9844"
-                                    fill="#FEF189" />
-                            </svg>
+                        <div class="flex items-center gap-2">
+                            <p>and</p>
+                            <div class="w-14 h-14">
+                                <svg viewBox="0 0 70.7011 70.7011" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 100%; height: 100%;">
+                                    <rect x="0.61084" y="30.7361" width="70.7011" height="9.79788" rx="4.89894"
+                                        fill="#FEF189" />
+                                    <rect x="40.8604" y="0.533691" width="70.7011" height="9.79788" rx="4.89894"
+                                        transform="rotate(90 40.8604 0.533691)" fill="#FEF189" />
+                                    <rect x="15.977" y="15.8999" width="39.9687" height="39.9687" rx="19.9844"
+                                        fill="#FEF189" />
+                                </svg>
+                            </div>
+                            <p>wellbeing.</p>
                         </div>
-                        <p>wellbeing.</p>
+                    </div>
+                    <div>
+                        <a href="#DownArrow" class="flex items-center gap-4">
+                            <p class="font-bold underline">Browse Library</p>
+                            <i
+                                class="fa-solid fa-arrow-down fa-sm border-2 border-black px-2.5 py-1 rounded-full dark:border-ltDark"></i>
+                        </a>
                     </div>
                 </div>
-                <div>
-                    <a href="#DownArrow" class="flex items-center gap-4">
-                        <p class="font-bold underline">Browse Library</p>
-                        <i class="fa-solid fa-arrow-down fa-sm border-2 border-black px-2.5 py-1 rounded-full dark:border-ltDark"
-                           ></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="flex justify-between">
-                <div class="flex items-center gap-5">
-                    <p>Unlock you
-                        <b>personalized</b><br>
-                        vitamin plan.
-                    </p>
-                    <a href="#VitaminPlan"><i class="fa-solid fa-arrow-right fa-2x bg-black text-white p-3 rounded-full dark:bg-ltDark dark:text-DarkModeText"></i></a>
-                </div>
-                <div>
-                    <div class="flex items-center gap-3">
-                        <a href="#PreviousPage" class="cursor-not-allowed"><i
-                                class="fa-solid fa-chevron-left fa-2x bg-white p-3 rounded-full opacity-50 dark:bg-ltDark"></i></a>
-                        <a href="#NextPage"><i
-                                class="fa-solid fa-chevron-right fa-2x bg-white p-3 rounded-full dark:bg-ltDark"></i></a>
+            </section>
+            <section>
+                <div class="flex justify-between">
+                    <div class="flex items-center gap-5">
+                        <p>Unlock you
+                            <b>personalized</b><br>
+                            vitamin plan.
+                        </p>
+                        <a href="#VitaminPlan"><i
+                                class="fa-solid fa-arrow-right fa-2x bg-black text-white p-3 rounded-full dark:bg-ltDark dark:text-DarkModeText"></i></a>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <a href="#PreviousPage" class="cursor-not-allowed"><i
+                                    class="fa-solid fa-chevron-left fa-2x bg-white p-3 rounded-full opacity-50 dark:bg-ltDark"></i></a>
+                            <a href="#NextPage"><i
+                                    class="fa-solid fa-chevron-right fa-2x bg-white p-3 rounded-full dark:bg-ltDark"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
         <section>
             <div class="flex justify-between gap-5">
@@ -177,7 +124,8 @@
                             <p class="font-bold">Start the quiz!</p>
                         </a>
                     </div>
-                    <div class="bg-ltYellow w-fit rounded-2xl p-3 flex flex-col gap-3 dark:text-black  dark:bg-ltYellowDark">
+                    <div
+                        class="bg-ltYellow w-fit rounded-2xl p-3 flex flex-col gap-3 dark:text-black  dark:bg-ltYellowDark">
                         <div class="flex items-center gap-3 w-fit">
                             <p class="text-6xl">1151</p>
                             <p>People completed <br> <b>the quiz</b> today</p>
@@ -199,7 +147,8 @@
                             </div>
                             <div>
                                 <a href="#MorePeople">
-                                    <i class="fa-solid fa-plus fa-xs bg-white p-2 rounded-full dark:bg-ltDark dark:text-DarkModeText"></i>
+                                    <i
+                                        class="fa-solid fa-plus fa-xs bg-white p-2 rounded-full dark:bg-ltDark dark:text-DarkModeText"></i>
                                 </a>
                             </div>
                         </div>
@@ -209,15 +158,17 @@
                     <div class="bg-white rounded-t-2xl p-3 flex flex-col dark:bg-ltDark">
                         <div class="flex justify-between gap-4">
                             <div class="flex gap-4">
-                                <a href="#About01" class="bg-white border border-black px-4 py-2 rounded-full dark:bg-Midnight dark:border-Midnight">About</a>
-                                <a href="#Link" class="bg-white border border-black p-2 px-3 rounded-full dark:bg-Midnight dark:border-Midnight">
+                                <a href="#About01"
+                                    class="bg-white border border-black px-4 py-2 rounded-full dark:bg-Midnight dark:border-Midnight">About</a>
+                                <a href="#Link"
+                                    class="bg-white border border-black p-2 px-3 rounded-full dark:bg-Midnight dark:border-Midnight">
                                     <i class="fa-solid fa-link fa-sm rounded-full"></i>
                                 </a>
                             </div>
                             <div>
                                 <a href="#AddToFavorite">
-                                    <i class="fa-solid fa-plus fa-xs bg-white border border-black p-2 rounded-full dark:bg-Midnight dark:border-Midnight"
-                                       ></i>
+                                    <i
+                                        class="fa-solid fa-plus fa-xs bg-white border border-black p-2 rounded-full dark:bg-Midnight dark:border-Midnight"></i>
                                 </a>
                             </div>
                         </div>
@@ -229,16 +180,16 @@
                         style="background-image: url(./assets/desert.png); background-size: cover; background-position: center;">
                         <div class="bg-white flex w-fit rounded-full px-2 py-2 gap-1 dark:bg-ltDark">
                             <a href="#Trophy">
-                                <i class="fa-solid fa-trophy fa-lg p-1.5 border border-black rounded-full dark:bg-Midnight dark:border-Midnight"
-                                   ></i>
+                                <i
+                                    class="fa-solid fa-trophy fa-lg p-1.5 border border-black rounded-full dark:bg-Midnight dark:border-Midnight"></i>
                             </a>
                             <a href="#Spin">
-                                <i class="fa-solid fa-arrows-spin fa-lg p-1.5 border border-black rounded-full dark:bg-Midnight dark:border-Midnight"
-                                   ></i>
+                                <i
+                                    class="fa-solid fa-arrows-spin fa-lg p-1.5 border border-black rounded-full dark:bg-Midnight dark:border-Midnight"></i>
                             </a>
                             <a href="#Leaf">
-                                <i class="fa-solid fa-leaf fa-lg p-1.5 border border-black rounded-full dark:bg-Midnight dark:border-Midnight"
-                                   ></i>
+                                <i
+                                    class="fa-solid fa-leaf fa-lg p-1.5 border border-black rounded-full dark:bg-Midnight dark:border-Midnight"></i>
                             </a>
                         </div>
                     </div>
@@ -246,7 +197,8 @@
                 <div class="w-1/2">
                     <div class="bg-ltBlue flex flex-col rounded-2xl p-5 gap-10 h-full dark:bg-ltBlueDark">
                         <div class="flex justify-between gap-10">
-                            <div><a href="#Library" class="bg-white px-4 py-2 rounded-full dark:bg-ltDark">Library</a></div>
+                            <div><a href="#Library" class="bg-white px-4 py-2 rounded-full dark:bg-ltDark">Library</a>
+                            </div>
                             <div>
                                 <a href="#About" class="bg-white px-4 py-2 rounded-full dark:bg-ltDark">
                                     <i class="fa-solid fa-plus fa-2xs"></i>
@@ -254,7 +206,8 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-between gap-14">
-                            <div class="flex items-center bg-white px-4 py-1 gap-2 rounded-full -rotate-6 dark:bg-ltDark">
+                            <div
+                                class="flex items-center bg-white px-4 py-1 gap-2 rounded-full -rotate-6 dark:bg-ltDark">
                                 <p class="font-semibold">Vitamins</p>
                                 <div class="w-14 h-14 rotate-45">
                                     <svg viewBox="0 0 35.4113 67.2004" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -264,7 +217,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="flex items-center bg-white px-4 py-1 gap-2 rounded-full rotate-12 dark:bg-ltDark">
+                            <div
+                                class="flex items-center bg-white px-4 py-1 gap-2 rounded-full rotate-12 dark:bg-ltDark">
                                 <p class="font-semibold">Minerals</p>
                                 <div class="w-14 h-14">
                                     <svg viewBox="0 0 70.7011 70.7011" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -278,7 +232,8 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="flex items-center bg-white px-4 py-1 gap-2 rounded-full -rotate-3 dark:bg-ltDark">
+                            <div
+                                class="flex items-center bg-white px-4 py-1 gap-2 rounded-full -rotate-3 dark:bg-ltDark">
                                 <p class="font-semibold">Probiotics</p>
                                 <div class="w-14 h-14 rotate-90">
                                     <svg viewBox="0 0 35.4113 67.2004" fill="none" xmlns="http://www.w3.org/2000/svg"
